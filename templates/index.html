@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project-8: 🚀 Deploy a Django App to AWS Elastic Beanstalk Using GitHub Actions 🚀</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+
+    .box {
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #fff; /* Set default background color to white */
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+    }
+
+    .dark-mode .box {
+      background-color: #333; /* Set background color to dark grey in dark mode */
+      color: #f0f0f0; /* Set text color to white in dark mode */
+    }
+
+    /* Image style */
+    .corner-image {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 150px; /* Increase the width of the image */
+      height: 150px; /* Increase the height of the image */
+      border-radius: 50%;
+      border: 2px solid #fff; /* Add border to the image for better visibility */
+      background-color: #fff; /* Set default background color to white */
+    }
+
+    .dark-mode .corner-image {
+      border: 2px solid #333; /* Change border color in dark mode */
+      background-color: #333; /* Set background color to dark grey in dark mode */
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Dark mode style */
+    body.dark-mode {
+      background-color: #333;
+      color: #f0f0f0;
+    }
+
+    /* Switch style */
+    .switch {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 34px;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <img class="corner-image" src="https://avatars.githubusercontent.com/u/125235866?v=4" alt="Your Image">
+  <div class="box">
+    <h1 class="title" onclick="toggleDarkMode()">🚀 Deploy a Django App to AWS Elastic Beanstalk Using GitHub Actions 🚀🌙</h1>
+  </div>
+
+  <label class="switch">
+    <input type="checkbox" onclick="toggleDarkMode()">
+    <span class="slider round"></span>
+  </label>
+</body>
+</html>
