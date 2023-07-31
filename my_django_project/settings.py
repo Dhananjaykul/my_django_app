@@ -65,5 +65,7 @@ USE_L10N = True
 USE_TZ = True
 
 DEBUG = True
+ALLOWED_HOSTS = ['*'] 
+
 
 STATIC_URL = '/static/'
