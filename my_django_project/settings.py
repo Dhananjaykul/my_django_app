@@ -64,4 +64,6 @@ USE_L10N = True
 
 USE_TZ = True
 
+DEBUG = True
+
 STATIC_URL = '/static/'
